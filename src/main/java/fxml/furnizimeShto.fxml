@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="775.0" prefWidth="480.0" stylesheets="@../css/addViews.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.furnizimeShtoController">
+   <children>
+      <Pane prefHeight="89.0" prefWidth="480.0" style="-fx-background-color: #4186ce;">
+         <children>
+            <Label alignment="CENTER" layoutX="8.0" prefHeight="89.0" prefWidth="464.0" style="-fx-background-color: #4186ce;" text="FURNIZIME" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXDatePicker fx:id="dpData" defaultColor="#4186ce" editable="false" layoutX="99.0" layoutY="156.0" prefHeight="39.0" prefWidth="321.0" promptText="Data" style="-fx-font-size: 18px;" />
+      <JFXTextField fx:id="txtCmimi" focusColor="#4186ce" labelFloat="true" layoutX="99.0" layoutY="236.0" prefHeight="42.0" prefWidth="283.0" promptText="Vlera e fatures*" unFocusColor="#4186ce">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <TextArea fx:id="txtPershkrimi" layoutX="99.0" layoutY="338.0" prefHeight="132.0" prefWidth="283.0" promptText="Pershkruani faturen*" style="-fx-border-color: #4186CE;" />
+      <JFXButton layoutX="99.0" layoutY="515.0" onAction="#ngarkoFaturen" prefHeight="42.0" prefWidth="179.0" style="-fx-padding: 0 31 0 0;" styleClass="btnUpload" text="Ngarko Faturen" textFill="WHITE" />
+      <JFXButton defaultButton="true" layoutX="119.0" layoutY="676.0" onAction="#ruaj" prefHeight="42.0" prefWidth="104.0" styleClass="btnSave" text="Ruaj" textFill="WHITE" />
+      <JFXButton fx:id="btnAnullo" layoutX="259.0" layoutY="676.0" onAction="#anullo" prefHeight="42.0" prefWidth="104.0" styleClass="btnCancel" text="Anullo" textFill="WHITE" />
+      <ImageView layoutX="57.0" layoutY="241.0">
+         <image>
+            <Image url="@../images/totali.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="57.0" layoutY="160.0">
+         <image>
+            <Image url="@../images/calendar.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblError" alignment="CENTER" layoutX="99.0" layoutY="628.0" prefHeight="21.0" prefWidth="283.0" textFill="#b74636" />
+      <ImageView layoutX="57.0" layoutY="338.0">
+         <image>
+            <Image url="@../images/comment.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="57.0" layoutY="520.0">
+         <image>
+            <Image url="@../images/image.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgFatura" fitHeight="42.0" fitWidth="50.0" layoutX="332.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

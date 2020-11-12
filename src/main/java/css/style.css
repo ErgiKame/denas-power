@@ -1,0 +1,132 @@
+.btn {
+	-fx-border-color :  #4186CE;
+	-fx-border-width : 0px 0px 1px 0px;
+}
+
+.btnChangePassword {
+     -fx-graphic: url("../images/password.png");
+}
+
+.btnDil {
+     -fx-graphic: url("../images/logout.png");
+}
+
+.btnTransporti {
+	 -fx-background-color : white;
+     -fx-graphic: url("../images/transporti.png");
+}
+
+.btnAdd {
+	 -fx-background-color :  #4186ce;
+     -fx-graphic: url("../images/add.png");
+}
+
+.btnEdit {
+	 -fx-background-color :  #4186ce;
+     -fx-graphic: url("../images/edit.png");
+}
+
+.btnExcel {
+	 -fx-background-color :   #B74636;
+     -fx-graphic: url("../images/excel.png");
+}
+
+.btnPdf {
+	 -fx-background-color :   #B74636;
+     -fx-graphic: url("../images/pdf.png");
+} 
+
+.btnLlogarit {
+	 -fx-background-color :   #B74636;
+     -fx-graphic: url("../images/calc.png");
+}
+
+.btnTransporti:focused {
+     -fx-graphic: url("../images/transporti-white.png");
+     -fx-background-color : #4186ce;
+     -fx-text-fill : white;
+}
+
+
+.btnKarburanti {
+	 -fx-background-color : white;
+     -fx-graphic: url("../images/fuel.png");
+}
+
+.btnKarburanti:focused {
+     -fx-graphic: url("../images/fuel-white.png");
+     -fx-background-color : #4186ce;
+     -fx-text-fill : white;
+}
+
+
+.btnPastrime {
+	 -fx-background-color : white;
+     -fx-graphic: url("../images/pastrime.png");
+}
+
+.btnPastrime:focused {
+     -fx-graphic: url("../images/pastrime-white.png");
+     -fx-background-color : #4186ce;
+     -fx-text-fill : white;
+}
+
+
+.btnFurnizime {
+	 -fx-background-color : white;
+     -fx-graphic: url("../images/furnizime.png");
+}
+
+.btnFurnizime:focused {
+     -fx-graphic: url("../images/furnizime-white.png");
+     -fx-background-color : #4186ce;
+     -fx-text-fill : white;
+}
+
+
+.btnPerdoruesit {
+	 -fx-background-color : white;
+     -fx-graphic: url("../images/user.png");
+}
+
+.btnPerdoruesit:focused {
+     -fx-graphic: url("../images/user-white.png");
+     -fx-background-color : #4186ce;
+     -fx-text-fill : white;
+}
+
+.btnNafta_lart {
+	 -fx-background-color : white;
+     -fx-graphic: url("../images/fuel.png");
+     -fx-text-indent: 60px;
+}
+
+.btnNafta_lart:focused {
+     -fx-graphic: url("../images/user-white.png");
+     -fx-background-color : #4186ce;
+     -fx-text-fill : white;
+}
+
+.btnUpload {
+	 -fx-background-color :  #4186ce;
+     -fx-graphic: url("../images/upload-white.png");
+     -fx-padding: 0 0 0 9;
+}
+
+.btnDalje {
+	 -fx-background-color :  #4186ce;
+     -fx-graphic: url("../images/dalje.png");
+}
+
+.delete {
+	-fx-graphic: url("../images/delete_table.png");
+    -fx-cursor: hand;
+    -fx-background-color :  transparent;
+}
+
+.paguaj {
+	 -fx-background-image: url("../images/pay.png");
+	 -fx-background-repeat : no-repeat;
+	 -fx-cursor: hand;
+     -fx-background-color :  transparent;
+}

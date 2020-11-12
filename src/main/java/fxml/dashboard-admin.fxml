@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1290.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashboard">
+   <children>
+      <VBox focusTraversable="true" prefHeight="630.0" prefWidth="255.0">
+         <children>
+            <HBox style="-fx-border-color: #4186CE; -fx-border-width: 0px 0px 1px 0px;">
+               <children>
+                  <ImageView fx:id="imgLogo" fitHeight="120.0" fitWidth="255.0" focusTraversable="true">
+                     <image>
+                        <Image url="@../images/denas-logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox fx:id="btnHolders" prefHeight="466.0" prefWidth="255.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="btnTransporti" maxHeight="1.7976931348623157E308" onAction="#transporti" prefHeight="151.0" prefWidth="255.0" ripplerFill="WHITE" text="Transporti" textFill="#4186ce" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="16.0" top="16.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="16.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="btnTransporti" />
+                        <String fx:value="btn" />
+                     </styleClass></JFXButton>
+                  <JFXButton fx:id="btnKarburanti" maxHeight="1.7976931348623157E308" onAction="#karburanti" prefHeight="151.0" prefWidth="255.0" ripplerFill="WHITE" text="Karburanti" textFill="#4186ce" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="16.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btnKarburanti" />
+                        <String fx:value="btn" />
+                     </styleClass></JFXButton>
+                  <JFXButton fx:id="btnFurnizime" maxHeight="1.7976931348623157E308" onAction="#furnizime" prefHeight="151.0" prefWidth="255.0" ripplerFill="WHITE" text="Furnizime" textFill="#4186ce" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="16.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btnFurnizime" />
+                        <String fx:value="btn" />
+                     </styleClass></JFXButton>
+                  <JFXButton fx:id="btnPastrime" maxHeight="1.7976931348623157E308" onAction="#pastrime" prefHeight="151.0" prefWidth="255.0" ripplerFill="WHITE" text="Pastrime" textFill="#4186ce" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="16.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btnPastrime" />
+                        <String fx:value="btn" />
+                     </styleClass></JFXButton>
+                  <JFXButton fx:id="btnNaftaLart" maxHeight="1.7976931348623157E308" onAction="#nafta_lart" prefHeight="151.0" prefWidth="255.0" ripplerFill="WHITE" text="Nafta Kantierit" textFill="#4186ce" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btnNafta_lart" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets bottom="16.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btnPerdoruesit" maxHeight="1.7976931348623157E308" onAction="#perdoruesit" prefHeight="151.0" prefWidth="255.0" ripplerFill="WHITE" text="Perdoruesit" textFill="#4186ce" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="16.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btnPerdoruesit" />
+                        <String fx:value="btn" />
+                     </styleClass></JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="TOP_RIGHT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="121.0" prefWidth="1035.0" style="-fx-background-color: white; -fx-border-width: 0px 0px 1px 0px; -fx-border-color: #4186CE;">
+               <children>
+                  <Label fx:id="lblWelcome" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textAlignment="CENTER" textFill="#4186ce" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets bottom="16.0" top="16.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btnNdryshoPasswordin" focusTraversable="false" onAction="#ndryshoPasswordin" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: white; -fx-border-color: #B74636;" styleClass="btnChangePassword" text="Ndrysho Passwordin" textFill="#b74636">
+                     <HBox.margin>
+                        <Insets right="16.0" top="16.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnDil" focusTraversable="false" onAction="#dil" prefHeight="89.0" prefWidth="212.0" style="-fx-background-color: #B74636;" styleClass="btnDil" text="Dil" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="16.0" top="16.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <VBox fx:id="mainVbox" prefHeight="634.0" prefWidth="1003.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </VBox.margin></VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

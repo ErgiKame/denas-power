@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="480.0" stylesheets="@../css/addViews.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.transportiShtoController">
+   <children>
+      <Pane prefHeight="89.0" prefWidth="480.0" style="-fx-background-color: #4186ce;">
+         <children>
+            <Label alignment="CENTER" layoutX="8.0" prefHeight="89.0" prefWidth="464.0" style="-fx-background-color: #4186ce;" text="TRANSPORT" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXDatePicker fx:id="dpData" defaultColor="#4186ce" editable="false" layoutX="99.0" layoutY="156.0" prefHeight="39.0" prefWidth="321.0" promptText="Data" style="-fx-font-size: 18px;" />
+      <JFXTextField fx:id="txtNisja" focusColor="#4186ce" labelFloat="true" layoutX="99.0" layoutY="237.0" prefHeight="39.0" prefWidth="283.0" promptText="Nisja*" unFocusColor="#4186ce">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMberritja" focusColor="#4186ce" labelFloat="true" layoutX="99.0" layoutY="317.0" prefHeight="42.0" prefWidth="283.0" promptText="Mberritja*" unFocusColor="#4186ce">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <TextArea fx:id="txtAreaKoment" layoutX="99.0" layoutY="401.0" prefHeight="105.0" prefWidth="283.0" promptText="Koment" style="-fx-border-color: #4186CE;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <JFXButton defaultButton="true" layoutX="116.0" layoutY="620.0" onAction="#ruaj" prefHeight="42.0" prefWidth="104.0" styleClass="btnSave" text="Ruaj" textFill="WHITE" />
+      <JFXButton fx:id="btnAnullo" layoutX="256.0" layoutY="620.0" onAction="#anullo" prefHeight="42.0" prefWidth="104.0" styleClass="btnCancel" text="Anullo" textFill="WHITE" />
+      <ImageView layoutX="57.0" layoutY="242.0">
+         <image>
+            <Image url="@../images/nisja.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="57.0" layoutY="325.0">
+         <image>
+            <Image url="@../images/mberritja.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="57.0" layoutY="405.0">
+         <image>
+            <Image url="@../images/comment.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="58.0" layoutY="162.0">
+         <image>
+            <Image url="@../images/calendar.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgMberritje" fitHeight="42.0" fitWidth="50.0" layoutX="332.0" layoutY="626.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgNisje" fitHeight="42.0" fitWidth="50.0" layoutX="332.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lblError" alignment="CENTER" layoutX="90.0" layoutY="563.0" prefHeight="21.0" prefWidth="283.0" textFill="#b74636" />
+   </children>
+</AnchorPane>

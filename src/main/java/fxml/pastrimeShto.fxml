@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="480.0" stylesheets="@../css/addViews.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.pastrimeShtoController">
+   <children>
+      <Pane prefHeight="89.0" prefWidth="480.0" style="-fx-background-color: #4186ce;">
+         <children>
+            <Label alignment="CENTER" layoutX="8.0" prefHeight="89.0" prefWidth="464.0" style="-fx-background-color: #4186ce;" text="PASTRIME" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXDatePicker fx:id="dpData" defaultColor="#4186ce" editable="false" layoutX="99.0" layoutY="156.0" prefHeight="39.0" prefWidth="321.0" promptText="Data" style="-fx-font-size: 18px;" />
+      <JFXButton defaultButton="true" layoutX="118.0" layoutY="590.0" onAction="#ruaj" prefHeight="42.0" prefWidth="104.0" styleClass="btnSave" text="Ruaj" textFill="WHITE" />
+      <JFXButton fx:id="btnAnullo" layoutX="258.0" layoutY="590.0" onAction="#anullo" prefHeight="42.0" prefWidth="104.0" styleClass="btnCancel" text="Anullo" textFill="WHITE" />
+      <ImageView layoutX="57.0" layoutY="160.0">
+         <image>
+            <Image url="@../images/calendar.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cmbVendi" layoutX="99.0" layoutY="252.0" prefHeight="39.0" prefWidth="283.0" promptText="Vendi*" style="-fx-font-size: 18;" />
+      <Label fx:id="lblError" alignment="CENTER" layoutX="99.0" layoutY="544.0" prefHeight="21.0" prefWidth="283.0" textFill="#b74636" />
+      <TextArea fx:id="txtPershkrimi" layoutX="99.0" layoutY="348.0" prefHeight="154.0" prefWidth="283.0" promptText="Pershkrimi" style="-fx-border-color: #4186CE;" />
+      <ImageView layoutX="57.0" layoutY="256.0">
+         <image>
+            <Image url="@../images/location.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="57.0" layoutY="348.0">
+         <image>
+            <Image url="@../images/comment.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
